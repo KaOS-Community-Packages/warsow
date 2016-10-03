@@ -1,5 +1,5 @@
 pkgname=warsow
-pkgver=2.0.1
+pkgver=2.1
 pkgrel=1
 pkgdesc='Free online multiplayer competitive FPS based on the Qfusion engine'
 url='https://www.warsow.gg/'
@@ -11,14 +11,14 @@ makedepends=('mesa' 'openal' 'imagemagick' 'gendesk' 'cmake')
 source=('warsow.launcher'
         'wsw-server.launcher'
         'wswtv-server.launcher'
-        'http://mirror.null.one/warsow_201_sdk.tar.gz' 
-        'http://mirror.null.one/warsow_201_unified.tar.gz')
+        'http://mirror.null.one/warsow_21_sdk.tar.gz' 
+        'http://mirror.null.one/warsow_21_unified.tar.gz')
 
 md5sums=('003f8a0974f0cd5c2b9e78d49cab24c9'
          '45a3f846fd6ea3b7dc857e60501d0e12'
          '13d520525638c544565d8f799ffdca48'
-         'e66809592094f45ec853b460ccaaa579' 
-         'fee194075847f9a2508f65da89b6cfea')
+         '56c02b5e9bd6f921fbc980e868c2b48d' 
+         'fac70b30d7295c0bc4c3f0432c4b7937')
 
 prepare() {
   gendesk -n -f --pkgname 'warsow' --pkgdesc "${pkgdesc}" --name 'Warsow' --categories 'Game;ActionGame'
